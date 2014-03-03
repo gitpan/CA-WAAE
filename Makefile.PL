@@ -29,10 +29,13 @@ use strict;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-	NAME			=> 'CA::WAAE',
-	VERSION_FROM	=> 'lib/CA/WAAE.pm',
-	PREREQ_PM		=> { 'DBI' => 0 },
-	($] >= 5.005 ?
-		(ABSTRACT_FROM	=> 'lib/CA/WAAE.pm',
-		 AUTHOR			=> 'Douglas Wilson (dougw@cpan.org)') : ())
+    NAME          => 'CA::WAAE',
+    VERSION_FROM  => 'lib/CA/WAAE.pm',
+    PREREQ_PM     => {
+       'DBI'         => 0,
+       'Time::Piece' => 0,
+   },
+    ($] >= 5.005 ?
+       (ABSTRACT_FROM  => 'lib/CA/WAAE.pm',
+       AUTHOR          => 'Douglas Wilson (dougw@cpan.org)') : ())
 );

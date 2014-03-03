@@ -23,6 +23,11 @@ Introduction
   This file documents the changes to each release of the
   CA::WAAE (Workflow Automation Autosys Edition) perl API.
 
+Changes for 0.02 - release date 18-feb-2014
+
+  o Add Time::Piece to prerequisite list
+  o Fix typos in pod.
+
 Changes for 0.01 - release date 13-sep-2013
 
   o Initial development.

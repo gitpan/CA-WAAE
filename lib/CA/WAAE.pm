@@ -28,7 +28,7 @@ use strict;
 use warnings;
 use DBI;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
     my $self  = {};
@@ -148,7 +148,7 @@ __END__
 
 =head1 NAME
 
-CA::WAAE - Interface to CA's Workflow Automation AE (AutoSys EditioN) job control.
+CA::WAAE - Interface to CA's Workflow Automation AE (AutoSys Edition) job control.
 
 =head1 SYNOPSIS
 
@@ -167,7 +167,7 @@ CA::WAAE - Interface to CA's Workflow Automation AE (AutoSys EditioN) job contro
 
 =head1 CLASS METHODS
 
-=head2 B<new() >
+=head2 B<new()>
 
     my $hdl = CA::WAAE->new( [OPT] ) ;
 
@@ -212,7 +212,7 @@ Example:
 
 =head1 INSTANCE METHODS
 
-=head2 B<find_jobs() >
+=head2 B<find_jobs()>
 
     my $jobs = $hdl->find_jobs($jobname) ;
 
@@ -233,11 +233,11 @@ To find a job with an exact name:
 
 See also L<CA::WAAE::Job|CA::WAAE::Job>
 
-=head2 B<job_list() >
+=head2 B<job_list()>
 
 Same as find_jobs, but returns an array of L<CA::WAAE::Job|CA::WAAE::Job> objects.
 
-=head2 B<send_event() >
+=head2 B<send_event()>
 
     my $rc = $hdl->send_event( [OPT] ) ;
 

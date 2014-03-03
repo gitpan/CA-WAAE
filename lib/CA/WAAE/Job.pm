@@ -25,7 +25,7 @@ package CA::WAAE::JobList;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $debug = 0;
 
@@ -280,13 +280,13 @@ CA::WAAE::Job - Object representing an AutoSys job.
 
 =head1 INSTANCE METHODS
 
-=head2 B<next_job() >
+=head2 B<next_job()>
 
     my $job = $jobs->next_job() ;
 
-Returns the next job from a list of jobs previously acquired by a call to L<find_jobs()|CA::WAAE/find_jobs() >.
+Returns the next job from a list of jobs previously acquired by a call to L<find_jobs()|CA::WAAE/find_jobs()>.
 
-=head2 B<find_children() >
+=head2 B<find_children()>
 
     my $children = $job->find_children() ;
 
@@ -298,15 +298,15 @@ Returns child jobs for a given job object. The child jobs can be traversed like 
         :
     }
 
-=head2 B<children> >
+=head2 B<children>
 
 Same as find_children(), but returns an array of L<CA::WAAE::Job|CA::WAAE::Job> objects.
 
-=head2 B<next_child() >
+=head2 B<next_child()>
 
     my $child = $children->next_child() ;
 
-Returns the next child from a list of child jobs previously acquired by a call to L<find_children() >.
+Returns the next child from a list of child jobs previously acquired by a call to L<find_children()>.
 
 =head2 B<status>
 

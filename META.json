@@ -1,5 +1,5 @@
 {
-   "abstract" : "Interface to CA's Workflow Automation AE (AutoSys EditioN) job control.",
+   "abstract" : "Interface to CA's Workflow Automation AE (AutoSys Edition) job control.",
    "author" : [
       "Douglas Wilson (dougw@cpan.org)"
    ],
@@ -32,10 +32,11 @@
       },
       "runtime" : {
          "requires" : {
-            "DBI" : 0
+            "DBI" : 0,
+            "Time::Piece" : 0
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "version" : "0.02"
 }
