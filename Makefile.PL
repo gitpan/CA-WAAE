@@ -32,6 +32,7 @@ WriteMakefile(
     NAME          => 'CA::WAAE',
     VERSION_FROM  => 'lib/CA/WAAE.pm',
     PREREQ_PM     => {
+       'constant'    => '1.04',
        'DBI'         => 0,
        'Time::Piece' => 0,
    },

@@ -23,6 +23,11 @@ Introduction
   This file documents the changes to each release of the
   CA::WAAE (Workflow Automation Autosys Edition) perl API.
 
+Changes for 0.03 - release date 3-mar-2014
+
+  o Require minimum version for constant pragma.
+  o Add to TODO
+
 Changes for 0.02 - release date 18-feb-2014
 
   o Add Time::Piece to prerequisite list

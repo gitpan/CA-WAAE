@@ -28,7 +28,7 @@ use strict;
 use warnings;
 use DBI;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new {
     my $self  = {};
@@ -294,11 +294,11 @@ To mark an job as inactive:
 
 =head1 TODOs
 
-Make the interface more "perlish", e.g. return an array of jobs instead of forcing the user
-to call C<next_job()> / C<next_child()>.
-
 Make the interface more "OO", e.g. allow the user to send an event directly from an C<CA::WAAE::Job> object
 to the underlying job instead of having to use C<CA::WAAE-E<gt>send_event()>.
+
+Due to changes in the underlying database, different attributes of different types of jobs are
+stored in separate tables. We currently only get those attributes for command and sql job types.
 
 There are lots of missing AutoSys features, e.g. "alarms".
 
